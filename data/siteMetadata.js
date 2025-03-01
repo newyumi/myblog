@@ -8,9 +8,9 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://newyumi.github.io',
   siteRepo: 'https://github.com/newyumi/newyumi.github.io.git',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.svg`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/blog-img.jpg`,
+  // mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'queen0701@gmail.com',
   github: 'https://newyumi.github.io',
   linkedin: 'https://www.linkedin.com/in/yumi-yang-b73221104',
