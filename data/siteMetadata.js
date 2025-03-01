@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Newyumi blog',
   author: 'Yumi',
   headerTitle: 'Newyumi blog',
-  description: 'Yumi Yang, who is a front-end developer. | 프론트엔드 개발자입니다.',
+  description: '안녕하세요 양유미입니다.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://newyumi.github.io',

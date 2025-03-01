@@ -9,14 +9,37 @@ const MAX_DISPLAY = 5
 export default function Home({ posts }) {
   return (
     <>
+      <div className="my-6 flex flex-col gap-x-12 lg:mb-12 lg:flex-row">
+        <div className="flex flex-col items-start justify-start space-y-6 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
+          <div className="space-y-4 md:border-r-2 md:border-gray-200 dark:md:border-gray-700">
+            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl dark:text-gray-100">
+              {siteMetadata.author}
+            </h1>
+            <p className="text-primary-500 mr-2 w-96 text-sm tracking-wider uppercase">
+              {siteMetadata.description}
+            </p>
+          </div>
+          <div className="max-w-xl space-y-4 text-gray-600 dark:text-gray-400">
+            <p>
+              Front-end 개발자이자 Technical Program Manager 양유미 입니다. 새로운 일에 도전하여
+              많은 경험을 하는 것을 좋아하고, 서비스의 목표가 명확하며 즐거운 서비스를 제공하는 것을
+              일의 보람으로 여기고 있습니다. 최근에는 인공지능 기술과 영어 커뮤니케이션에 관심이
+              많습니다.
+            </p>
+            <p>
+              I am Yang Yumi, a front-end developer and Technical Program Manager. I enjoy taking on
+              new challenges and gaining diverse experiences. I find fulfillment in working towards
+              clear goals and providing enjoyable services. Recently, I have developed a keen
+              interest in artificial intelligence technology and English communication.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
-            Latest
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+          <h2 className="text-sm font-bold tracking-wider text-gray-500 uppercase dark:text-gray-400">
+            Latest Writing
+          </h2>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
