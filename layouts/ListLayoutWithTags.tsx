@@ -89,14 +89,14 @@ export default function ListLayoutWithTags({
           </h1>
         </div>
         <div className="flex sm:space-x-24">
-          <div className="hidden h-full max-h-screen max-w-[280px] min-w-[280px] flex-wrap overflow-auto rounded-sm bg-gray-50 pt-5 shadow-md sm:flex dark:bg-gray-900/70 dark:shadow-gray-800/40">
+          <div className="hidden h-full max-h-screen max-w-[260px] min-w-[260px] flex-wrap overflow-auto rounded-sm bg-gray-50 pt-5 shadow-md sm:flex dark:bg-gray-900/70 dark:shadow-gray-800/40">
             <div className="px-6 py-4">
               {pathname.startsWith('/blog') ? (
-                <h3 className="text-primary-500 font-bold uppercase">All Posts</h3>
+                <h3 className="text-primary-500 mb-4 font-bold uppercase">All Posts</h3>
               ) : (
                 <Link
                   href={`/blog`}
-                  className="hover:text-primary-500 dark:hover:text-primary-500 font-bold text-gray-700 uppercase dark:text-gray-300"
+                  className="hover:text-primary-500 dark:hover:text-primary-500 mb-4 font-bold text-gray-700 uppercase dark:text-gray-300"
                 >
                   All Posts
                 </Link>
@@ -104,7 +104,7 @@ export default function ListLayoutWithTags({
               <ul>
                 {sortedTags.map((t) => {
                   return (
-                    <li key={t} className="my-3">
+                    <li key={t} className="my-1">
                       {decodeURI(pathname.split('/tags/')[1]) === slug(t) ? (
                         <h3 className="text-primary-500 inline px-3 py-2 text-sm font-bold uppercase">
                           {`${t} (${tagCounts[t]})`}

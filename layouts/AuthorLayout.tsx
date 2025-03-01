@@ -20,7 +20,7 @@ export default function AuthorLayout({ children, content }: Props) {
           </h1>
         </div>
         <div className="items-start xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center space-x-2">
+          <div className="flex flex-col items-center space-x-2 pt-4">
             {avatar && (
               <Image
                 src={avatar}
@@ -35,7 +35,7 @@ export default function AuthorLayout({ children, content }: Props) {
 
             <div className="space-y-4 pt-16">{children}</div>
           </div>
-          <div className="prose dark:prose-invert max-w-none pt-8 pb-8 leading-snug xl:col-span-2">
+          <div className="prose dark:prose-invert max-w-none pb-8 leading-snug xl:col-span-2">
             <div className="px-0 xl:px-8">
               <section className="py-6">
                 <div className="text-primary-500 text-xl font-bold">
@@ -47,12 +47,12 @@ export default function AuthorLayout({ children, content }: Props) {
 
                 <ul className="grid list-none gap-6 pl-0">
                   <li className="text-sm">
-                    <div className="font-bold text-gray-950">
+                    <div className="font-bold">
                       컴퍼니위
                       <span className="pl-2 text-xs font-bold text-gray-500">2015 ~ 2024.04</span>
                     </div>
                     플랫폼 개발팀 팀 리드
-                    <div className="pt-2 text-sm font-semibold text-gray-950">
+                    <div className="pt-2 text-sm font-semibold">
                       - CNCITY ENERGY에 파견
                       <span className="pl-2 text-xs font-bold text-gray-500">
                         2022.02 ~ 2023.02
@@ -62,7 +62,7 @@ export default function AuthorLayout({ children, content }: Props) {
                   </li>
 
                   <li className="text-sm">
-                    <div className="font-bold text-gray-950">
+                    <div className="font-bold">
                       양명고등학교 - 고등학교 방과 후 수업 강의
                       <span className="pl-2 text-xs font-bold text-gray-500">
                         2017.03 ~ 2017. 12
@@ -72,7 +72,7 @@ export default function AuthorLayout({ children, content }: Props) {
                   </li>
 
                   <li className="text-sm">
-                    <div className="font-bold text-gray-950">
+                    <div className="font-bold">
                       퍼릭스, 개발팀
                       <span className="pl-2 text-xs font-bold text-gray-500">014.11 ~ 2015.11</span>
                     </div>
@@ -80,7 +80,7 @@ export default function AuthorLayout({ children, content }: Props) {
                   </li>
 
                   <li className="text-sm">
-                    <div className="font-bold text-gray-950">
+                    <div className="font-bold">
                       인피니트 헬스케어, 산학연계
                       <span className="tpl-2 ext-xs font-bold text-gray-500">
                         2013.03 ~ 2014.10
@@ -94,7 +94,7 @@ export default function AuthorLayout({ children, content }: Props) {
                     </div>
                   </li>
                   <li className="text-sm">
-                    <div className="font-bold text-gray-950">
+                    <div className="font-bold">
                       LG전자 미래IT융합, 인턴
                       <span className="pl-2 text-xs font-bold text-gray-500">
                         2012.05 ~ 2012.11
