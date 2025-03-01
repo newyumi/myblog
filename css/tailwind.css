@@ -75,10 +75,6 @@
     border-radius: var(--radius-sm);
     outline-color: var(--color-primary-500);
   }
-
-  li {
-    @apply m-0;
-  }
 }
 
 .task-list-item::before {

@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Newyumi Blog',
+  title: 'Newyumi blog',
   author: 'Yumi',
-  headerTitle: 'Newyumi',
+  headerTitle: 'Newyumi blog',
   description: 'Yumi Yang, who is a front-end developer. | 프론트엔드 개발자입니다.',
   language: 'en-us',
   theme: 'system', // system, dark or light

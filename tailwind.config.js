@@ -24,6 +24,9 @@ module.exports = {
             code: {
               color: theme('--color-indigo-500'),
             },
+            li: {
+              margin: 0,
+            },
           },
         },
         invert: {
